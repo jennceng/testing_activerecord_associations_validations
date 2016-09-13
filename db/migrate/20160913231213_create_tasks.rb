@@ -3,7 +3,6 @@ class CreateTasks < ActiveRecord::Migration
     create_table :tasks do |t|
       t.string :title, null: false
       t.text :description
-      t.integer :user_id, null: false
 
       t.timestamps
     end

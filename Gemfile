@@ -12,6 +12,6 @@ group :test, :development do
   gem 'pry'
   gem 'rspec'
   gem 'database_cleaner'
-  gem 'shoulda-matchers'
+  gem 'shoulda'
   gem 'valid_attribute'
 end

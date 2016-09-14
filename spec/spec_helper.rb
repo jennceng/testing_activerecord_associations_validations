@@ -6,7 +6,7 @@ require_relative 'support/database_cleaner'
 require_relative '../app.rb'
 
 require 'valid_attribute'
-require 'shoulda/matchers'
+require 'shoulda'
 
 set :environment, :test
 set :database, :test

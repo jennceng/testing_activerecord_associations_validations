@@ -6,7 +6,7 @@ require_relative 'support/database_cleaner'
 require_relative '../app.rb'
 
 require 'valid_attribute'
-require 'shoulda-matchers'
+require 'shoulda'
 
 set :environment, :test
 set :database, :test
@@ -24,10 +24,4 @@ RSpec.configure do |config|
 
   config.order = :random
   Kernel.srand config.seed
-end
-
-Shoulda::Matchers.configure do |config|
-  config.integrate do |with|
-    with.test_framework :rspec
-  end
 end
